@@ -1,13 +1,4 @@
-/*
-Template Name: Me
-Author: One Page Love
-Author URI: https://onepagelove.com
-Template URI: https://onepagelove.com/me
-Description: Me is a slick, personal layout for any individual wanting a minimal online presence. Features include a big background image, logo, bio and icons.
-Version: 0.2.2
-*/
-/* -- CSS Reset -- */
-@import url("https://fonts.googleapis.com/css?family=Avenir:400,500");
+@import url("https://fonts.googleapis.com/css?family=Futura:400,500");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -70,14 +61,14 @@ img.aligncenter {
   margin-left: auto; }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #FDFCDC;
   border-style: none; }
 
 body,
 p,
 a,
 a:hover {
-  color: #7400B8; }
+  color: #F07167; }
 
 a,
 a:hover {
@@ -89,42 +80,25 @@ a:hover {
 /* -- Content -- */
 
 
-html {
-  background-color: #FFFFFF; }
-
-body.page-template-page-fullsingle-me {
+body.full {
   height: 100vh;
-  font-family: 'Avenir Next', sans-serif;
+  font-family: 'Futura', sans-serif;
   font-size: 22px;
   line-height: 60px;
 }
 
-body.page-template-page-fullsingle-me p {
+body.full p {
     margin-bottom: 28px;
   }
 
 @media (max-width: 800px) {
-  body.page-template-page-fullsingle-me p {
+  body.full p {
     font-size: 32px;
     line-height: 40px;
     }
   }
 
-.fs-me {
-  padding: 10vh 10vw;
-  overflow: hidden;
-  position: absolute;
-  z-index: 1000;
-}
-
-@media (max-width: 500px) {
-  .fs-me {
-    padding: 5vh 5vw;
-    text-align: center;
-    }
-  }
-
-  .fs-me .me-content {
+  .content {
     height: 80vh;
     display: -webkit-box;
     display: -webkit-flex;
@@ -136,7 +110,7 @@ body.page-template-page-fullsingle-me p {
     }
 
   @media (max-width: 500px) {
-    .fs-me .me-content {
+    .content {
         height: 90vh;
         }
     }
@@ -152,8 +126,8 @@ body.page-template-page-fullsingle-me p {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
           flex-direction: column;
-  -webkit-align-self: left;
-          align-self: left;
+  -webkit-align-self: center;
+          align-self: center;
   }
 
 @media (max-width: 500px) {
@@ -162,60 +136,5 @@ body.page-template-page-fullsingle-me p {
     align-self: center;
     }
   }
-
-.logo p {
-  letter-spacing: 30px;
-  font-size: 22px;
-  font-weight: 400;
-  }
-
-.bio {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-          flex: 1 1 auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center;
-  letter-spacing: -1px;
-  max-width: 66%;
-  }
-
-.bio p {
-  letter-spacing: 20px;
-  font-size: 22px;
-  }
-
-.bio a {
-  text-decoration: underline;
-  }
-
-.bio a:hover {
-  text-decoration: none;
-  }
-
-@media (max-width: 800px) {
-  .bio {
-    max-width: none;
-    } 
-  }
-
-.credit {
-  margin-bottom: 0;
- }
-
-.credit a, .credit p {
-    font-size: 12px;
-    color: #C8C8C8;
-    line-height: 14px;
-    letter-spacing: 0px;
-    opacity: 1;
-    }
 
 
