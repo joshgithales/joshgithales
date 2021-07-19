@@ -1,0 +1,221 @@
+/*
+Template Name: Me
+Author: One Page Love
+Author URI: https://onepagelove.com
+Template URI: https://onepagelove.com/me
+Description: Me is a slick, personal layout for any individual wanting a minimal online presence. Features include a big background image, logo, bio and icons.
+Version: 0.2.2
+*/
+/* -- CSS Reset -- */
+@import url("https://fonts.googleapis.com/css?family=Avenir:400,500");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "liga" on;
+  margin: 0; }
+
+img.alignright {
+  float: right; }
+
+img.alignleft {
+  float: left; }
+
+img.aligncenter {
+  clear: both;
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+
+body {
+  background-color: #FFFFFF;
+  border-style: none; }
+
+body,
+p,
+a,
+a:hover {
+  color: #7400B8; }
+
+a,
+a:hover {
+  text-decoration: none;
+  border: none;
+  border-style: none;
+  box-shadow: none; }
+
+/* -- Content -- */
+
+
+html {
+  background-color: #FFFFFF; }
+
+body.page-template-page-fullsingle-me {
+  height: 100vh;
+  font-family: 'Avenir Next', sans-serif;
+  font-size: 22px;
+  line-height: 60px;
+}
+
+body.page-template-page-fullsingle-me p {
+    margin-bottom: 28px;
+  }
+
+@media (max-width: 800px) {
+  body.page-template-page-fullsingle-me p {
+    font-size: 32px;
+    line-height: 40px;
+    }
+  }
+
+.fs-me {
+  padding: 10vh 10vw;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1000;
+}
+
+@media (max-width: 500px) {
+  .fs-me {
+    padding: 5vh 5vw;
+    text-align: center;
+    }
+  }
+
+  .fs-me .me-content {
+    height: 80vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    }
+
+  @media (max-width: 500px) {
+    .fs-me .me-content {
+        height: 90vh;
+        }
+    }
+
+.logo {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-self: left;
+          align-self: left;
+  }
+
+@media (max-width: 500px) {
+  .logo {
+    -webkit-align-self: center;
+    align-self: center;
+    }
+  }
+
+.logo p {
+  letter-spacing: 30px;
+  font-size: 22px;
+  font-weight: 400;
+  }
+
+.bio {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  letter-spacing: -1px;
+  max-width: 66%;
+  }
+
+.bio p {
+  letter-spacing: 20px;
+  font-size: 22px;
+  }
+
+.bio a {
+  text-decoration: underline;
+  }
+
+.bio a:hover {
+  text-decoration: none;
+  }
+
+@media (max-width: 800px) {
+  .bio {
+    max-width: none;
+    } 
+  }
+
+.credit {
+  margin-bottom: 0;
+ }
+
+.credit a, .credit p {
+    font-size: 12px;
+    color: #C8C8C8;
+    line-height: 14px;
+    letter-spacing: 0px;
+    opacity: 1;
+    }
+
+
